@@ -1,0 +1,32 @@
+.section__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.section__button {
+    background: transparent;
+    border: none;
+    color: teal;
+    transform: 1s;
+    padding: 10px;
+    margin: 0 0 0 20px;
+    transition: 1s;
+}
+
+@media (max-width: 767px) {
+    .section__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__button:disabled {
+    color: hsl(0, 0%, 70%);
+    pointer-events: none;
+}
