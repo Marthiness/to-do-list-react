@@ -1,10 +1,10 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks }) => (
+const Buttons = ({ tasks, hideDone }) => (
     tasks.length > 0 && (
         <div className="section__buttons">
             <button className="section__button">
-                {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
+                {hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
             </button>
             <button
                 className="section__button"
